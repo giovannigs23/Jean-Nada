@@ -1,0 +1,359 @@
+body {
+    background: url("backuniverse.jpg");
+    background-size: 1000px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.banner_content {
+    text-align: center;
+    color: rgb(255, 212, 212);
+}
+.banner_content h1 {
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 5px;
+}
+.banner_content h1 span {
+    color: tomato;
+}
+.banner_image {
+    background: url("Jean\ Nada\ gold.png") no-repeat top center;
+    background-size: 300px 300px ;
+    width: 100%;
+    height: 650px; /* Cambiado a '850px' */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services {
+    background: whitesmoke;
+}
+.diff_services { /* fotos pagina inicial) */
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.diff_services .diff_services_items {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.diff_services .diff_services_items img {
+    width: 100%;
+    margin-bottom: 25px;
+    display: block;
+    transition: all 0.5s ease;
+}
+.diff_services .diff_services_items:hover img {
+    transform: scale(1.1);    
+}
+.diff_services .diff_services_items h3 { /*letra debajo de las casas*/ 
+    color: tomato;
+    margin-bottom: 15px;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: tomato;
+    background-color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slides {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: goldenrod;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.slides > div:target {
+    transform: scale(0.8);
+}
+
+.author-info {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.author-info a {
+    color: white;
+}
+/*cambio de pagina"circulitos abajo en el footer" */
+.slider > a { 
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgb(201, 201, 201);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.slider > a:active {
+    top: 1px;
+}
+
+.slider > a:focus {
+    background: #000;
+}
+
+@supports (scroll-snap-type) {
+    .slider > a {
+        display: none;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background-color: darkgrey;
+    opacity: 0.9;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: lightblue;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
+body {
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card.container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: black;
+    padding: 70px 0;
+    color: white;
+    margin-top: auto;
+    display: block; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+    text-align: center; /* Added */
+    flex-direction: column; /* Added */
+    position: auto;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+/* Linea roja en footer */
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 25px;
+    }
+    .navbar_items ul {
+        margin-bottom: 5px;
+    }
+    .navbar_items ul li {
+        margin-top: 35px;
+    }
+}
+
+.footer a {
+    color: #0c0909;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: #fb2274;
+    border-radius: 50%;
+    display: none;
+}
+
+.arrow img {
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}

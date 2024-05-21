@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Nada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="carwash.css">
+</head>
+<body>
+    <ul>
+        <li><a href="Carwash.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <a href="#">Other</a>
+            <ul>
+                <li><a href="pagina4.html">Clients</a></li>
+                <li><a href="pagina4.html">Career</a></li>
+                <li><a href="VIPcarwash.html">Services</a></li>
+                <li><a href="pagina4.html">Contact</a></li>
+                <li><a href="#ourteam">Our Team</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <div class="banner_image">
+        <div class="banner_content">
+        <h1><br><span></span>welcome to my blog</h1>
+        <p>Jean Nada brings a chill electronic
+            seductive attitude with a Latin atmospheric glide.<br> 
+            Jean Nada personifies a smooth
+            soothing voice with a counter balance bass and <br> visual of 70’s
+            style meets modern minimalistic haute-couture.  </p>
+    </div>
+    </div>
+    <div class="about" id="about">
+        <h1 class="title">About Us</h1>
+        <p>Dream Home is the world's number 1</p><br>
+		<p>In this blog, we take pride in offering high-quality music that meet your dreams and sound expectations.<br> 
+		Our dedicated team is committed to providing you with exceptional service.<br>
+		Discover the beauty and comfort in each of our songs.</p>
+        <div class="btn"><a href="https://marketplace.kw.com/en-US/home">Learn More</a></div>
+    </div>
+    <!--Las fotos que estan arriba del footer-->
+    <div class="services" id="services">
+        <h1 class="title"><center>Our services</center></h1>
+       <center> <p>At this blog, we take pride in offering high-quality sound that meet your music expectations. <br>We're committed to providing you with the good music.
+            <br> Contact us today to learn more about our services and how we can help you.</p></center>
+        <div class="diff_services">
+            <div class='diff_services_items'>
+                <a href="https://artistecard.com/jeannada#!/musics/119712">
+                <img src="album.jpg" alt="Casa1">
+                <h3 class="sub_title">Listen Now</h3></a>
+            </div>
+
+            <div class="diff_services_items">
+                <a href="VIPcarwash.html">
+                <img src="Jean Nada Albumartwork.jpg" alt="Casa2">
+                <h3 class="sub_title">Buy Album</h3></a><br>
+            </div>
+
+            <div class='diff_services_items'>
+                <a href="pagina4.html">
+                <img src="Jean Nada gold.png" alt="Casa3">
+                <h3 class="sub_title">Contrataciones</h3></a>
+            </div>
+        </div>
+    </div>
+    <div id="formulario1" class="formulario1">
+        <label for="password">Contraseña VIP:</label>
+        <input type="password" id="password" required>
+        <button onclick="verificarPassword()">Acceder</button>
+    </div>
+    
+    <div id="contenido-secreto" style="display: none;">
+        <h2>Bienvenido usuario VIP, clik <a href="VIPcarwash.html">Aqui</a></h2>
+        
+    </div>
+   
+
+      <footer class="footer">
+        <div class="container">
+           <div class="row">
+           <div class="footer-col">
+           <h3>Company</h3>
+       <ul>            
+           <li><a href="#aboutus">About Us</a></li>
+           <li><a href="https://www.facebook.com/jeannada88/events/?paipv=0&eav=AfbMQX633eTrHfy6bhG5qaEjCHxdqG4jMfGkTazz9gHmhJ3pVY-rlQuc8Kj4gNPEX6k&_rdr">Fan Page</a></li>
+           
+   </ul>
+</div>
+<div class="contactus" id="contactus">
+    <h1 class="title">Contact Us</h1>
+    <div class="form_wrapper">
+        <div class="form_input">
+            
+
+                        <script> 
+                            function validateEmail(email) {
+                                const re = /\S+@\S+\.\S+/;
+                                return re.test(email);
+                            }
+                        
+                            function submitForm() {
+                                const email = document.getElementById('email').value;
+                                const subject = document.getElementById('subject').value;
+                                const message = document.getElementById('message').value;
+                        
+                                // Validar email
+                                if (!validateEmail(email)) {
+                                    document.getElementById('emailError').innerText = "Please enter a valid email address";
+                                    return;
+                                } else {
+                                    document.getElementById('emailError').innerText = "";
+                                }
+                        
+                                // Aquí podrías añadir más validaciones si lo deseas
+                        
+                                // Envío del mensaje (simulado aquí)
+                                var mailtoLink= "mailto:giovagonzalez23@hotmail.com" +
+                                "?subject=" + subject + "&body=" + email + "%0D%0A" +
+                                message;
+                                window.location.href = mailtoLink;
+                            }
+                        </script>
+                        <input type="text" id="email" placeholder="Email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div class="form_input">
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form_input">
+                        <input type="text" id="message" placeholder="Message">
+                    </div>
+                    <div class="btn">
+                        <button onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+<div class="footer-col">
+   <h4>Follow Us</h4>
+  <div class="social-links">
+
+   <a href="https://x.com/jeannadamusica"><i class="fab fa-twitter"></i></a>
+
+       <a href="https://www.instagram.com/jean_nada/"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+</div>
+<div class="slider">
+  
+    <a href="Carwash.html">1</a>
+    <a href="VIPcarwash.html">2</a>
+    <a href="https://artistecard.com/jeannada#!/musics/119712">3</a>
+    <a href="pagina4.html">4</a>
+    
+
+      </div>
+    </div>
+  </div>
+    
+    <script>
+        function verificarPassword() {
+            var contraseña = document.getElementById("password").value;
+            
+            if (contraseña === "1234") {
+              
+                document.getElementById("formulario1").style.display = "none";
+                document.getElementById("contenido-secreto").style.display = "block";
+            } else {
+                alert("Contraseña incorrecta. Por favor, inténtalo de nuevo.");
+            }
+           
+            <ul>            
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="https://kwri.kw.com/open-positions/">Careers</a></li>
+                
+        </ul>
+
+        }
+    </script>
+</body>
+</html>
